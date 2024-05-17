@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif; 
+    text-align: justify;
+}
+
+.nav {
+    background-color: #002642;
+    overflow: hidden;
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    height: 50px;
+}
+
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; 
+}
+
+.nav ul li {
+    display: inline-block; 
+}
+
+.nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: #111;
+}
+
+.nav ul li a.active {
+    background-color: #4caf96;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav ul li {
+        display: block; 
+        width: 100%;
+    }
+}
+
+
+/*Images de carrucel*/
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%; 
+    animation: slide 18s infinite linear; 
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 25%;
+    position: relative;
+}
+
+.slider-frame img {
+    width: 100%;
+    height: 1000px; 
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: 0; }
+
+    30% { margin-left: -100%; }
+    55% { margin-left: -100%; }
+
+    60% { margin-left: -200%; }
+    85% { margin-left: -200%; }
+
+    90% { margin-left: -300%; }
+    100% { margin-left: -300%; } 
+}
+
+
+
+
+
+.contenido {
+    margin: 0 180px; 
+}
+
+/*Secciones*/
+.seccion {
+    padding: 40px 100px ; 
+    height: 500px;
+    
+}
+
+.texto1 h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .texto1 p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+/*********/
+
+.seccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 50px 0;
+  }
+
+  .texto2 h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .texto2 p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .imagen2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+/*******/
+  .seccion3 {
+    padding: 40px 100px ; 
+    height: 350px;
+    
+}
+
+.texto1 h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .texto1 p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .sub-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.servicio {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex:  200px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio .icono {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 1em;
+    color: #333;
+}
+
+#Conocenos {
+    background-color: whitesmoke;
+    text-align: center; 
+}
+
+#Conocenos .heading h3 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+#Mision {
+    background-color: skyblue ;
+    text-align: center;  
+}
+
+#Mision .heading h3 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+#Servicios {
+    background-color: whitesmoke;
+    text-align: center; 
+}
+
+#Servicios .heading h3 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+
+
+/*footer*/
+
+footer {
+    background-color: #002642;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content .Redes a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-content .Rssedes a:hover {
+    color: #f39c12;
+}
+
+.footer-content p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
