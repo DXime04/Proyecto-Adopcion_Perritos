@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: lato;
+    font-family: Courier, 'Courier New', monospace;
     box-sizing: border-box;
 }
 
@@ -25,8 +25,6 @@ p {
     height: 50px;
 }
 
-
-
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -44,6 +42,7 @@ p {
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav ul li a:hover {
@@ -61,6 +60,18 @@ p {
         display: block; 
         width: 100%;
     }
+}
+
+@media (max-width: 767px) {
+    /* Estilos para pantallas pequeñas */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para pantallas medianas */
+}
+
+@media (min-width: 992px) {
+    /* Estilos para pantallas grandes */
 }
 
 
@@ -127,8 +138,6 @@ h2 {
     90% { margin-left: -300%; }
     100% { margin-left: -300%; } 
 }
-
-
 
 
 
