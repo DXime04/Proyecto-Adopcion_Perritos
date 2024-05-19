@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voluntariado</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-voluntariado.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body id="Voluntariado">
     <header>
         <div class="nav">
-            <ul class="nav navbar-nav collapse navbar-right">
+            <ul class="nav navbpuedes ar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="Inicio.html">Inicio</a></li>
                 <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
@@ -23,35 +23,102 @@
         </div>
     </header>
 
-    <section id="Conocenos" class="seccion">
+    <section id="PorQueSerVoluntario" class="seccion">
         <div class="Texto1">
-            
-                <h2><span>VOLUNTARIADO</span></h2>
-            </div><br>
-            <div class="contenido">
-                <p>¡Bienvenido a CachorroFeliz!</p>
-                <br><br>
-
-                    <p>En nuestra misión por encontrar hogares amorosos para perros necesitados,
-                     nos dedicamos a conectar a los compañeros caninos con familias que los amarán de por vida.
-                     En CachorroFeliz, no solo nos preocupamos por la adopción, sino que también nos 
-                     comprometemos a educar sobre la responsabilidad de tener una mascota y promover el bienestar
-                     animal en nuestra comunidad.
-                    
-                    Nuestro equipo está formado por amantes de los animales que trabajan incansablemente para
-                    brindar atención y cuidado a cada perro bajo nuestro cuidado. Nos enorgullece ofrecer un 
-                    ambiente seguro y acogedor para todos nuestros amigos peludos, donde puedan recuperarse, 
-                    recibir amor y encontrar un hogar para siempre.
-                    
-                    Explora nuestro sitio para conocer más sobre nuestro trabajo, descubrir perros disponibles 
-                    para adopción y aprender cómo puedes contribuir a nuestra causa. Juntos, podemos marcar la 
-                    diferencia en la vida de estos fieles compañeros de cuatro patas.</p>
-                    <br>
-                    <br>
-                    <p>¡Gracias por visitarnos y por considerar la adopción como la primera opción!</p>
-            </div>
+            <h2><span>¿POR QUÉ SER VOLUNTARIO?</span></h2>
+        </div><br>
+        <div class="contenido">
+            <p>El voluntariado es una oportunidad única para marcar la diferencia en 
+                la vida de los animales y en la comunidad en general. Al unirte como 
+                voluntario, no solo estás ayudando a quienes más lo necesitan, sino 
+                que también estás contribuyendo a construir un mundo más solidario y 
+                compasivo.</p>
+            <br>
+            <br>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Beneficios personales y sociales</th>
+                    <th>Impacto Positivo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ser voluntario no solo beneficia a los demás, también tiene un 
+                        impacto positivo en tu vida. Te permite desarrollar nuevas 
+                        habilidades, conocer gente nueva, ampliar tu red de contactos, 
+                        mejorar tu bienestar emocional y sentirte parte de algo más 
+                        grande que tú mismo.</td>
+                    <td>Tu trabajo como voluntario puede marcar una gran diferencia. 
+                        Desde ayudar a los animales a encontrar un hogar amoroso hasta 
+                        contribuir a mejorar sus condiciones de vida, cada acción que 
+                        tomas como voluntario tiene un impacto directo y significativo 
+                        en la comunidad.</td>
+                  </tr>
+                </tbody>
+              </table>
+            <br>
         </div>
-   
+    </section>
+
+    <section id="ComoSerVoluntario" class="seccion4">
+        <div class="Texto1">
+            <h2><span>¿CÓMO SER VOLUNTARIO?</span></h2>
+        </div>
+        <div class="contenido">
+            <h4>Requisitos:</h4>
+            <p>Para ser voluntario en nuestra organización, debes tener una fuerte 
+                pasión por ayudar a los animales. No se requiere experiencia previa, 
+                solo la disposición de dedicar tu tiempo y energía a esta noble 
+                causa.</p>
+            <br>
+            <h4>Proceso de inscripción:</h4>
+            <p>Si estás interesado en ser voluntario, simplemente completa nuestro 
+                formulario de solicitud en línea. Una vez que recibamos tu solicitud, 
+                nos pondremos en contacto contigo para una breve entrevista y para 
+                proporcionarte más información sobre nuestras oportunidades de 
+                voluntariado.</p>
+            <br>
+            <h4>Tipos de actividades:</h4>
+            <p>Como voluntario, tendrás la oportunidad de participar en una variedad 
+                de actividades, como pasear perros, cuidar y alimentar a los animales, 
+                ayudar en eventos de adopción, y más. También puedes elegir el área en 
+                la que te gustaría enfocarte, ya sea en el cuidado directo de los 
+                animales o en actividades de apoyo administrativo.</p>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <section id="Postularse" class="seccion5">
+        <div class="Texto1">
+            <h2><span>Postúlate para ser voluntario</span></h2>
+        </div>
+        <div class="contenido">
+            <form action="postularse.php" method="post">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="evento">Evento:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">Seleccione un evento</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Seleccione un estado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">¿Por qué quieres ser voluntario?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Postularse</button>
+            </form>
+        </div>
     </section>
 
     <footer>
