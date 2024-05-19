@@ -1,12 +1,11 @@
 <?php
-// Verificar si se han enviado los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Conectar a la base de datos (reemplaza los valores con los de tu configuración)
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "adopcion_Perritos";
+    $dbname = "adopcion_perritos";
 
+    // Conectar a la base de datos
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Verificar la conexión
@@ -15,20 +14,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Obtener los datos del formulario
-    $username = $_POST["username"];
+    $nombreUsuario = $_POST["nombreUsuario"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+    $hashed_password = md5($password); // Hash de la contraseña
 
-    // Hash de la contraseña (puedes usar password_hash para mayor seguridad)
-    $hashed_password = md5($password);
-
-    // Insertar el nuevo usuario en la base de datos
-    $sql = "INSERT INTO Usuario (Username, Email, Contraseña) VALUES ('$username', '$email', '$hashed_password')";
+    // Insertar los datos en la base de datos
+    $sql = "INSERT INTO Usuario (Username, Email, Contraseña) VALUES ('$nombreUsuario', '$email', '$hashed_password')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Usuario registrado exitosamente";
+        // Registro exitoso, redirigir a la página de registro con alerta
+        echo "<script>alert('Usuario registrado correctamente'); window.location.href = 'registro.html';</script>";
+        exit();
     } else {
-        echo "Error al registrar al usuario: " . $conn->error;
+         // Error durante el registro, mostrar alerta y redirigir a la página de registro
+         echo "<script>alert('Error al registrar el usuario: " . $conn->error . "'); window.location.href = 'registro.html';</script>";
+         exit();
     }
 
     // Cerrar la conexión
