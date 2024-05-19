@@ -1,22 +1,29 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #16152b;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 400px;
-    margin: 0 auto;
+    width: 300px;
+    margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.464);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 input[type="text"],
@@ -26,12 +33,20 @@ input[type="password"] {
     padding: 8px;
     border: 1px solid #ccc;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #09396d;
 }
