@@ -1,0 +1,73 @@
+
+.conteiner-icon{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.sub-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 40px 50px;
+}
+
+.container-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 70px 50px 70px 50px;
+    
+    }
+
+.item{
+    border-radius: 10px;
+
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;/*para que no se vea extraña la imagen y se adote*/
+    border-radius: 10px 10px 0 0;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+/*.item:hover img{
+    transform: scale(1.1);
+}*/
+
+
+.precio{
+    font-size: 18px;
+    font-weight: 950;/*resaltar el texto*/
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #002642;
+    color: azure;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
