@@ -7,52 +7,175 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="stylesheet" href="css/Adopcion.css">
 </head>
-<body id="Voluntariado">
+<body>
     <header>
         <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
-                <li><a href="Inicio.html">Inicio</a></li>
-                <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
+                <li><a href="#Inicio" class="active">Inicio</a></li>
+                <li><a href="#Conocenos">Conócenos</a></li>
                 <li><a href="Voluntariado.html">Voluntariado</a></li>
                 <li><a href="Donar.html">Donar</a></li>
-                <li><a href="Adopcion.html" class="active">Adopción</a></li>
+                <li><a href="Adopcion.html">Adopción</a></li>
             </ul>
         </div>
     </header>
+    <br><br><br>
+    <div class="Perritos">
+    <div class="main-container">
+        <div class="filters">
+            <label for="raza">Filtrar por raza:</label>
+            <select id="raza" name="raza">
+                <option value="all">Todas las razas</option>
+                <option value="Labrador">Labrador</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Bulldog">Bulldog</option>
+                
+            </select>
 
-    <section id="Conocenos" class="seccion">
-        <div class="Texto1">
-            
-                <h2><span>ADOPCIONES</span></h2>
-            </div><br>
-            <div class="contenido">
-                <p>¡Bienvenido a CachorroFeliz!</p>
-                <br><br>
-
-                    <p>En nuestra misión por encontrar hogares amorosos para perros necesitados,
-                     nos dedicamos a conectar a los compañeros caninos con familias que los amarán de por vida.
-                     En CachorroFeliz, no solo nos preocupamos por la adopción, sino que también nos 
-                     comprometemos a educar sobre la responsabilidad de tener una mascota y promover el bienestar
-                     animal en nuestra comunidad.
-                    
-                    Nuestro equipo está formado por amantes de los animales que trabajan incansablemente para
-                    brindar atención y cuidado a cada perro bajo nuestro cuidado. Nos enorgullece ofrecer un 
-                    ambiente seguro y acogedor para todos nuestros amigos peludos, donde puedan recuperarse, 
-                    recibir amor y encontrar un hogar para siempre.
-                    
-                    Explora nuestro sitio para conocer más sobre nuestro trabajo, descubrir perros disponibles 
-                    para adopción y aprender cómo puedes contribuir a nuestra causa. Juntos, podemos marcar la 
-                    diferencia en la vida de estos fieles compañeros de cuatro patas.</p>
-                    <br>
-                    <br>
-                    <p>¡Gracias por visitarnos y por considerar la adopción como la primera opción!</p>
-            </div>
+            <label for="tamano">Filtrar por tamaño:</label>
+            <select id="tamano" name="tamano">
+                <option value="all">Todos los tamaños</option>
+                <option value="Grande">Grande</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Pequeño">Pequeño</option>
+                
+            </select>
         </div>
-   
-    </section>
+        <div class="cards-container">
+            <div class="card" data-raza="Labrador" data-tamano="Grande">
+                <img src="Img/Perritos/closeup-shot-cute-sitting-golden-retriever-puppy-isolated-white-surface.jpg" alt="Perrito 1">
+                <h2>Max</h2>
+                <p>Raza: Labrador</p>
+                <p>Tamaño: Grande</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            <div class="card" data-raza="Beagle" data-tamano="Mediano">
+                <img src="Img/Perritos/beagle-tricolor-puppy-is-posing-cute-white-braun-black-doggy-pet-is-sitting-blue-background-looks-attented-sad-studio-photoshot-concept-motion-movement-action-negative-space.jpg" alt="Perrito 2">
+                <h2>Luna</h2>
+                <p>Raza: Beagle</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Hembra</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            <div class="card" data-raza="Bulldog" data-tamano="Pequeño">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+             
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Salchicha</p>
+                <p>Tamaño: Chico</p>
+                <p>Género: Hembra</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+
+            <div class="card" data-raza="Bulldog" data-tamano="Mediano">
+                <img src="Img/Perritos/Englische-Bulldogge-Profilbild.jpg" alt="Perrito 3">
+                <h2>Rocky</h2>
+                <p>Raza: Bulldog</p>
+                <p>Tamaño: Mediano</p>
+                <p>Género: Macho</p>
+                <div class="buttons">
+                    <button class="adoptar-btn">Adoptar</button>
+                    <button class="mas-btn" >Ver más</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    </div>
+    
 
     <footer>
         <div class="footer-content">
@@ -65,5 +188,6 @@
         </div>
     </footer>
     <script src="/JS/script-nav.js"></script>
+    <script src="JS/Adopcion.js"></script>
 </body>
 </html>
