@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombreUsuario = $_POST["nombreUsuario"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $hashed_password = md5($password); // Hash de la contraseña
+    //$hashed_password = md5($password); // Hash de la contraseña
 
     // Insertar los datos en la base de datos
-    $sql = "INSERT INTO Usuario (Username, Email, Contraseña) VALUES ('$nombreUsuario', '$email', '$hashed_password')";
+    $sql = "INSERT INTO Usuario (Username, Email, Contraseña) VALUES ('$nombreUsuario', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         // Registro exitoso, redirigir a la página de registro con alerta

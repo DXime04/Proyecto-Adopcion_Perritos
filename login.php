@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $credencial = $_POST["credencial"];
     $password = $_POST["password"];
-    $hashed_password = md5($password);
+    //$hashed_password = md5($password);
 
     $credencial = $conn->real_escape_string($credencial);
 
-    $sql = "SELECT * FROM Usuario WHERE (Email='$credencial' OR Username='$credencial') AND Contraseña='$hashed_password'";
+    $sql = "SELECT * FROM Usuario WHERE (Email='$credencial' OR Username='$credencial') AND Contraseña='$password'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
