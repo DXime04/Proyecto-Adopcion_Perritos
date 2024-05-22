@@ -25,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         echo "<script>alert('Correo electrónico/nombre de usuario o contraseña incorrectos.'); window.location.href = 'login.html';</script>";
-
     }
 
     $conn->close();
