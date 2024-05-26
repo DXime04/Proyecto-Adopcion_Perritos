@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <h1>Editar Usuario</h1>
+    <h1>Editar Evento</h1>
     <?php
     // Datos de conexión a la base de datos
     $servername = "localhost";
@@ -32,28 +32,28 @@
         $id = $_GET['id'];
         
         // Consulta SQL para obtener los datos del usuario
-        $sql = "SELECT * FROM Usuario WHERE ID = $id";
+        $sql = "SELECT * FROM Eventos WHERE ID = $id";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             // Mostrar un formulario con los datos del usuario para editar
-            echo "<form action='actualizar_usuario.php' method='POST'>";
+            echo "<form action='actualizar_evento.php' method='POST'>";
             echo "<input type='hidden' name='id' value='" . $row["ID"] . "'>";
-            echo "Username: <input type='text' name='username' value='" . $row["Username"] . "'><br>";
-            echo "Email: <input type='text' name='email' value='" . $row["Email"] . "'><br>";
-            echo "Contraseña: <input type='password' name='password' value='" . $row["Contraseña"] . "'><br>";
-            echo "Rol ID: <input type='text' name='rol_id' value='" . $row["Rol_ID"] . "'><br>";
+            echo "Nombre: <input type='text' name='nombre' value='" . $row["Nombre"] . "'><br>";
+            echo "Fecha: <input type= 'datetime-local' name='fecha' value='" . $row["Fecha"] . "'><br>";
+            echo "Descripcion: <input type='text' name='descripcion' value='" . $row["Descripcion"] . "'><br>";
+            echo "Lugar: <input type='text' name='lugar' value='" . $row["Lugar"] . "'><br>";
             echo "<input type='submit' value='Actualizar'>";
             echo "</form>";
             echo "<div class='button-container'>";
-            echo "<a href='RepUsuarios.php' class='button-back'>Regresar</a>";
+            echo "<a href='CRUDEventos.php' class='button-back'>Regresar</a>";
             echo "</div>";
         } else {
-            echo "<script>alert('Usuario no encontrado'); window.location.href = 'RepUsuarios.php';</script>";
+            echo "<script>alert('Evento no encontrado'); window.location.href = 'CRUDEventos.php';</script>";
         }
     } else {
-        echo "<script>alert('ID de Usuario no Identificado'); window.location.href = 'RepUsuarios.php';</script>";
+        echo "<script>alert('ID de Evento no Identificado'); window.location.href = 'CRUDEventos.php';</script>";
     }
 
     // Cerrar conexión

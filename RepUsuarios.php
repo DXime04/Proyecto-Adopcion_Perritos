@@ -16,8 +16,8 @@
             <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="InicioAdmin.html">Inicio</a></li>
-                <li><a href="RepUsuarios.html" class="active">Usuarios</a></li>
-                <li><a href="CRUDEventos.html">Eventos</a></li>
+                <li><a href="RepUsuarios.php" class="active">Usuarios</a></li>
+                <li><a href="CRUDEventos.php">Eventos</a></li>
                 <li><a href="RepVoluntarios.html">Voluntariado</a></li>
                 <li><a href="CRUDProductos.html">Productos</a></li>
                 <li><a href="RepDonar.html">Donaciones</a></li>
