@@ -1,0 +1,155 @@
+/* Estilos para los botones de editar y eliminar */
+/* Estilo general para la sección */
+.seccion {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.seccion4 {
+    padding: 20px;
+    background-color: #c3edf0;
+}
+
+/* Estilo específico para InfoUsuarios */
+#InfoUsuarios .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#InfoUsuarios table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#InfoUsuarios th, #InfoUsuarios td {
+    padding: 10px;
+    border: 2px solid #3e4b44;
+    text-align: left;
+}
+
+#InfoUsuarios th {
+    background-color: #6aaa87;
+    color: white;
+}
+
+#InfoUsuarios td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
+/* Estilo específico para AgregarUsuario */
+#AgregarUsuario .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#AgregarUsuario form {
+    display: flex;
+    flex-direction: column;
+}
+
+#AgregarUsuario label {
+    margin-top: 10px;
+}
+
+#AgregarUsuario input, #AgregarUsuario select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#AgregarUsuario input[type="submit"] {
+    margin-top: 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#AgregarUsuario input[type="submit"]:hover {
+    background-color: #1976d2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.acciones a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #3d9cdb;
+    color: white;
+    border: 1px solid #3d9cdb;
+}
+
+.acciones a:hover {
+    background-color: #086eb3;
+    border: 1px solid #086eb3;
+}
+
+/* Estilos adicionales para el botón de eliminar */
+.acciones .eliminar {
+    background-color: #ca3c4a;
+    border: 1px solid #ca3c4a;
+}
+
+.acciones .eliminar:hover {
+    background-color: #a3212e;
+    border: 1px solid #a3212e;
+}
+
+/* Estilos para el formulario de edición de usuario */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
