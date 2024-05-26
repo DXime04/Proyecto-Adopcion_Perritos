@@ -2,11 +2,11 @@
 /* Estilo general para la sección */
 .seccion {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #bacfe2;
 }
 .seccion4 {
     padding: 20px;
-    background-color: #c3edf0;
+    background-color: #f9f9f9;
 }
 
 /* Estilo específico para InfoUsuarios */
@@ -24,12 +24,17 @@
 
 #InfoUsuarios th, #InfoUsuarios td {
     padding: 10px;
-    border: 2px solid #3e4b44;
+    border: 2px solid #2e3133;
     text-align: left;
 }
 
 #InfoUsuarios th {
-    background-color: #6aaa87;
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#InfoUsuarios td {
+    background-color: #677dc7;
     color: white;
 }
 
