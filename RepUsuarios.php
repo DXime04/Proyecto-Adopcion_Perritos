@@ -26,7 +26,7 @@
             </ul>
         </div>
     </header>
-    <section id="InfoUsuarios" class="seccion">
+    <section id="InfoUsuarios" class="seccion5">
     <div class="Texto1">
         <br><br><br><br><br>
             <?php
