@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
-<body id="RepUsuarios">
+<body id="Inicio">
     <header>
         <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
-                <li><a href="InicioAdmin.html">Inicio</a></li>
-                <li><a href="RepUsuarios.php" class="active">Usuarios</a></li>
+                <li><a href="InicioAdmin.html" class="active">Inicio</a></li>
+                <li><a href="RepUsuarios.php">Usuarios</a></li>
                 <li><a href="CRUDEventos.php">Eventos</a></li>
                 <li><a href="RepVoluntarios.html">Voluntariado</a></li>
-                <li><a href="CRUDProductos.html">Productos</a></li>
-                <li><a href="RepDonar.html">Donaciones</a></li>
-                <li><a href="CRUDPerritos.html">Cachorros</a></li>
-                <li><a href="RepAdopciones.html">Adopciones</a></li>
+                <li><a href="CRUDProductos.php">Productos</a></li>
+                <li><a href="razas.php">Razas</a></li>
+                <li><a href="CRUDEPerritos.php">Cachorros</a></li>
             </ul>
         </div>
+    </header>
     </header>
     <section id="InfoUsuarios" class="seccion5">
     <div class="Texto1">
