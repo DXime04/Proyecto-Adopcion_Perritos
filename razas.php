@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Perritos</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-eventos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
 </head>
-<body id="Inicio">
+<body id="Perritos">
     <header>
-        <div class="nav">
+    <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="InicioAdmin.html" class="active">Inicio</a></li>
@@ -26,35 +26,18 @@
             </ul>
         </div>
     </header>
-    <div class="slider-frame">
-        <ul>
-            <li>
-                <img src="Img/perrito.jpg" alt="">
-                <div class="texto">
-                    <h2>ELLOS TE NECESITAN..</h2>
-                </div>
-            </li>
-            <li>
-                <img src="Img/perrito2.jpg" alt="">
-                <div class="texto">
-                    <h2>¡TU PUEDES HACER LA DIFERENCIA!</h2>
-                </div>
-            </li>
-            <li>
-                <img src="Img/perrito3.jpg" alt="">
-                <div class="texto">
-                    <h2>AYUDANOS A CAMBIAR UNA VIDA.</h2>
-                </div>
-            </li>
 
-            <li>
-                <img src="Img/perrito4.jpg" alt="">
-                <div class="texto">
-                    <h2>UN AMIGO DE TODA LA VIDA.</h2>
-                </div>
-            </li>
-        </ul>
-    </div>
+
+    <section id="AgregarRaza" class="seccion4">
+        <div class="Texto1">
+            <h2>Agregar Raza</h2>
+            <form action="Agregar_raza.php" method="POST">
+                <label for="raza">Nombre de la Raza:</label><br>
+                <input type="text" id="raza" name="raza" required><br><br>
+                <input type="submit" value="Agregar Raza">
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-content">

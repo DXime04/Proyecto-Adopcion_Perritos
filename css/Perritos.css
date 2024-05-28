@@ -1,0 +1,19 @@
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #4caf96;
+}
+.tarjeta img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+.tarjeta h3 {
+    margin: 8px 0;
+}
