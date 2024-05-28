@@ -34,7 +34,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perritos</title>
+    <title>Detalles de los Cachorros</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/Perritos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -50,8 +50,8 @@ $conn->close();
                 <li><a href="CRUDEventos.php">Eventos</a></li>
                 <li><a href="RepVoluntarios.php">Voluntariado</a></li>
                 <li><a href="CRUDProductos.php">Productos</a></li>
-                <li><a href="razas.php" class="active">Razas</a></li>
-                <li><a href="RepDonar.html">Donaciones</a></li>
+                <li><a href="razas.php" class="active">Detalles</a></li>
+                <li><a href="RepDonar.php">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
                 <li><a href="RepAdopciones.html">Adopciones</a></li>
             </ul>

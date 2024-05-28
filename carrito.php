@@ -18,7 +18,6 @@
                 <li><a href="Inicio.html">Inicio</a></li>
                 <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
                 <li><a href="Voluntariado.php">Voluntariado</a></li>
-                <li><a href="Donar.html">Donar</a></li>
                 <li><a href="CRUDProductosUsuario.php">Donar</a></li>
                 <li><a href="carrito.php" class="active">Carrito</a></li>
                 <li><a href="CRUDPerritosUsuario.php">Adopción</a></li>
