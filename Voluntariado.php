@@ -59,13 +59,13 @@
 <body id="Voluntariado">
     <header>
         <div class="nav">
-            <ul class="nav navbpuedes ar-nav collapse navbar-right">
+        <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="Inicio.html">Inicio</a></li>
                 <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
                 <li><a href="Voluntariado.php" class="active">Voluntariado</a></li>
                 <li><a href="Donar.html">Donar</a></li>
-                <li><a href="Adopcion.html">Adopción</a></li>
+                <li><a href="CRUDPerritosUsuario.php">Adopción</a></li>
             </ul>
         </div>
     </header>

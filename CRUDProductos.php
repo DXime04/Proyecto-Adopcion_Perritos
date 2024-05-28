@@ -12,15 +12,17 @@
 <body id="Inicio">
     <header>
         <div class="nav">
-            <ul class="nav navbar-nav collapse navbar-right">
+        <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
-                <li><a href="InicioAdmin.html" class="active">Inicio</a></li>
+                <li><a href="InicioAdmin.html">Inicio</a></li>
                 <li><a href="RepUsuarios.php">Usuarios</a></li>
                 <li><a href="CRUDEventos.php">Eventos</a></li>
                 <li><a href="RepVoluntarios.html">Voluntariado</a></li>
-                <li><a href="CRUDProductos.php">Productos</a></li>
+                <li><a href="CRUDProductos.php" class="active">Productos</a></li>
                 <li><a href="razas.php">Razas</a></li>
+                <li><a href="RepDonar.html">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
+                <li><a href="RepAdopciones.html">Adopciones</a></li>
             </ul>
         </div>
     </header>

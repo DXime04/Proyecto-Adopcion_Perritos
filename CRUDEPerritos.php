@@ -9,33 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<<<<<<< HEAD
 <body id="Inicio">
-=======
-<body id="Perritos">
->>>>>>> 7f37565bbda79c47e2bce988e3743e2677739614
     <header>
         <div class="nav">
-            <ul class="nav navbar-nav collapse navbar-right">
+        <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
-<<<<<<< HEAD
-                <li><a href="InicioAdmin.html" class="active">Inicio</a></li>
+                <li><a href="InicioAdmin.html">Inicio</a></li>
                 <li><a href="RepUsuarios.php">Usuarios</a></li>
                 <li><a href="CRUDEventos.php">Eventos</a></li>
                 <li><a href="RepVoluntarios.html">Voluntariado</a></li>
                 <li><a href="CRUDProductos.php">Productos</a></li>
                 <li><a href="razas.php">Razas</a></li>
-                <li><a href="CRUDEPerritos.php">Cachorros</a></li>
-=======
-                <li><a href="InicioAdmin.html">Inicio</a></li>
-                <li><a href="RepUsuarios.php">Usuarios</a></li>
-                <li><a href="CRUDEventos.php">Eventos</a></li>
-                <li><a href="RepVoluntarios.html">Voluntariado</a></li>
-                <li><a href="CRUDProductos.html">Productos</a></li>
                 <li><a href="RepDonar.html">Donaciones</a></li>
-                <li><a href="CRUDPerritos.php" class="active">Cachorros</a></li>
+                <li><a href="CRUDEPerritos.php" class="active">Cachorros</a></li>
                 <li><a href="RepAdopciones.html">Adopciones</a></li>
->>>>>>> 7f37565bbda79c47e2bce988e3743e2677739614
             </ul>
         </div>
     </header>

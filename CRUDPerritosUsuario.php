@@ -15,14 +15,11 @@
         <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
                 <li><a href="login.html">Login</a></li>
-                <li><a href="InicioAdmin.html">Inicio</a></li>
-                <li><a href="RepUsuarios.php">Usuarios</a></li>
-                <li><a href="CRUDEventos.php">Eventos</a></li>
-                <li><a href="RepVoluntarios.html">Voluntariado</a></li>
-                <li><a href="CRUDProductos.html">Productos</a></li>
-                <li><a href="RepDonar.html">Donaciones</a></li>
-                <li><a href="CRUDPerritos.php" class="active">Cachorros</a></li>
-                <li><a href="RepAdopciones.html">Adopciones</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
+                <li><a href="Voluntariado.php">Voluntariado</a></li>
+                <li><a href="Donar.html">Donar</a></li>
+                <li><a href="CRUDPerritosUsuario.php" class="active">Adopción</a></li>
             </ul>
         </div>
     </header>
