@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt_insert->bind_param("iis", $evento_id, $usuario_id, $motivo);
     
             if ($stmt_insert->execute()) {
-                echo "<script>alert('Postulación Exitosa'); window.location.href = 'Voluntariado.php#Postularse';</script>";
+                echo "<script>alert('Postulación Exitosa: Solicitud en espera de aceptación'); window.location.href = 'Voluntariado.php#Postularse';</script>";
             } else {
                 echo "<script>alert('Error al postularse'); window.location.href = 'Voluntariado.php#Postularse';</script>" . $stmt_insert->error;
             }

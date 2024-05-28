@@ -18,7 +18,7 @@
                 <li><a href="InicioAdmin.html">Inicio</a></li>
                 <li><a href="RepUsuarios.php" class="active">Usuarios</a></li>
                 <li><a href="CRUDEventos.php">Eventos</a></li>
-                <li><a href="RepVoluntarios.html">Voluntariado</a></li>
+                <li><a href="RepVoluntarios.php">Voluntariado</a></li>
                 <li><a href="CRUDProductos.php">Productos</a></li>
                 <li><a href="razas.php">Razas</a></li>
                 <li><a href="RepDonar.html">Donaciones</a></li>

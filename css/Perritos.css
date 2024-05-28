@@ -1,3 +1,191 @@
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.seccion5 {
+    padding: 20px;
+    background-color: #bacfe2;
+    height: 700px;
+}
+.seccion4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: auto;
+}
+
+/* Estilo específico para InfoUsuarios */
+#InfoUsuarios .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#InfoUsuarios table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#InfoUsuarios th, #InfoUsuarios td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#InfoUsuarios th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#InfoUsuarios td {
+    background-color: #677dc7;
+    color: white;
+}
+
+#InfoUsuarios td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
+/* Estilo específico para AgregarUsuario */
+#AgregarUsuario .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#AgregarUsuario form {
+    display: flex;
+    flex-direction: column;
+}
+
+#AgregarUsuario label {
+    margin-top: 10px;
+}
+
+#AgregarUsuario input, #AgregarUsuario select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#AgregarUsuario input[type="submit"] {
+    margin-top: 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#AgregarUsuario input[type="submit"]:hover {
+    background-color: #1976d2;
+}
+
+#Raza .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#Raza table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#Raza th, #Raza td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#Raza th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#Raza td {
+    background-color: #677dc7;
+    color: white;
+}
+
+#Raza td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+#Tamaño .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#Tamaño table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#Tamaño th, #Tamaño td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#Tamaño th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#Tamaño td {
+    background-color: #677dc7;
+    color: white;
+}
+
+#Tamaño td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
+#Genero .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#Genero table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#Genero th, #Genero td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#Genero th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#Genero td {
+    background-color: #677dc7;
+    color: white;
+}
+
+#Genero td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
 .tarjeta {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -16,4 +204,84 @@
 }
 .tarjeta h3 {
     margin: 8px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.acciones a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #3d9cdb;
+    color: white;
+    border: 1px solid #3d9cdb;
+}
+
+.acciones a:hover {
+    background-color: #086eb3;
+    border: 1px solid #086eb3;
+}
+
+/* Estilos adicionales para el botón de eliminar */
+.acciones .eliminar {
+    background-color: #ca3c4a;
+    border: 1px solid #ca3c4a;
+}
+
+.acciones .eliminar:hover {
+    background-color: #a3212e;
+    border: 1px solid #a3212e;
+}
+
+
+form {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form input[type="text"], form input[type="datetime-local"], form input[type="email"], form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1976d2;
 }

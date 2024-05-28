@@ -1,0 +1,92 @@
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.seccion5 {
+    padding: 20px;
+    background-color: #bacfe2;
+    height: 700px;
+}
+.seccion4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo específico para InfoUsuarios */
+#InfoUsuarios .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#InfoUsuarios table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#InfoUsuarios th, #InfoUsuarios td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#InfoUsuarios th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#InfoUsuarios td {
+    background-color: #677dc7;
+    color: white;
+}
+
+#InfoUsuarios td.acciones a {
+    margin-right: 10px;
+    color: #f0e8e8;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.acciones a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #3d9cdb;
+    color: white;
+    border: 1px solid #3d9cdb;
+}
+
+.acciones a:hover {
+    background-color: #086eb3;
+    border: 1px solid #086eb3;
+}
+
+/* Estilos adicionales para el botón de eliminar */
+.acciones .rechazar {
+    background-color: #ca3c4a;
+    border: 1px solid #ca3c4a;
+}
+
+.acciones .rechazar:hover {
+    background-color: #a3212e;
+    border: 1px solid #a3212e;
+}

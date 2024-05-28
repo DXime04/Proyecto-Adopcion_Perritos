@@ -12,6 +12,7 @@ h2 {
 .seccion4 {
     padding: 20px;
     background-color: #f9f9f9;
+    height: auto;
 }
 
 /* Estilo específico para InfoUsuarios */

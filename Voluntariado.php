@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
     <style>
+        .seccion6 {
+            display: grid;
+            gap: 20px; 
+            padding: 40px 100px ; 
+            height: 1000px;
+        }
         .lista-eventos {
             display: flex;
             flex-wrap: wrap;
@@ -137,7 +143,7 @@
         </div>
     </section>
 
-    <section id="Eventos" class="seccion5">
+    <section id="Eventos" class="seccion6">
         <div class="Texto1">
             <h2><span>Eventos Disponibles</span></h2>
         </div>
