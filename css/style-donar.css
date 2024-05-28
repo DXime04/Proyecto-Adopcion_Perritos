@@ -1,3 +1,21 @@
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.seccion5 {
+    padding: 20px;
+    background-color: #bacfe2;
+    height: auto;
+    
+}
+.seccion4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -22,4 +40,33 @@ th {
     background-color: #3d9cdb;
     color: white;
     border: 1px solid #3d9cdb;
+}
+
+/* Estilo específico para InfoUsuarios */
+#InfoUsuarios .Texto1 {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#InfoUsuarios table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#InfoUsuarios th, #InfoUsuarios td {
+    padding: 10px;
+    border: 2px solid #2e3133;
+    text-align: left;
+}
+
+#InfoUsuarios th {
+    background-color: #3c4f8f;
+    color: white;
+}
+
+#InfoUsuarios td {
+    background-color: #677dc7;
+    color: white;
 }

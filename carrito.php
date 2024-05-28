@@ -1,16 +1,54 @@
+<?php
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+$usuario_id = $_SESSION['usuario_id'];
+
+// Obtener datos de los productos seleccionados por el usuario
+$sql = "SELECT p.Nombre, p.Precio FROM Donaciones d 
+        JOIN Producto p ON d.ProductoID = p.ID 
+        WHERE d.UsuarioID = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $usuario_id);
+$stmt->execute();
+$result = $stmt->get_result();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Productos Seleccionados</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-eventos.css">
-    <link rel="stylesheet" href="css/Productos.css">
+    <link rel="stylesheet" href="css/Perritos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tabla-productos {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .tabla-productos th, .tabla-productos td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tabla-productos th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
-<body id="Carrito">
+<body>
     <header>
         <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
@@ -18,60 +56,37 @@
                 <li><a href="Inicio.html">Inicio</a></li>
                 <li><a href="Inicio.html#Conocenos">Conócenos</a></li>
                 <li><a href="Voluntariado.php">Voluntariado</a></li>
-                <li><a href="CRUDProductosUsuario.php">Donar</a></li>
-                <li><a href="carrito.php" class="active">Carrito</a></li>
+                <li><a href="Productos.php">Donar</a></li>
+                <li><a href="carrito.php">Carrito</a></li>
                 <li><a href="CRUDPerritosUsuario.php">Adopción</a></li>
-                
+                <li><a href="ver_seleccion.php" class="active">Mi Selección</a></li>
             </ul>
         </div>
     </header>
-    <section id="InfoCarrito" class="seccion5">
+    <section id="InfoProductos" class="seccion5">
         <div class="Texto1">
-            <h2><span>Carrito de Compras</span></h2>
-        </div><br>
+            <h2><span>Productos Seleccionados</span></h2>
+        </div>
         <div class="contenido">
             <?php
-            // Conectar a la base de datos
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "adopcion_perritos";
-
-            $conn = new mysqli($servername, $username, $password, $database);
-            if ($conn->connect_error) {
-                die("Error de conexión: " . $conn->connect_error);
-            }
-
-            // Obtener los datos de la tabla de donaciones
-            $usuarioID = 1; // Supongamos que el usuario actual tiene ID 1, debes cambiarlo si es diferente
-            $sql = "SELECT Producto.Nombre, Producto.Precio, Donaciones.ProductoID
-                    FROM Donaciones
-                    INNER JOIN Producto ON Donaciones.ProductoID = Producto.ID
-                    WHERE Donaciones.UsuarioID = $usuarioID";
-            $result = $conn->query($sql);
-
             if ($result->num_rows > 0) {
-                echo "<table>";
+                echo "<table class='tabla-productos'>";
                 echo "<tr><th>Producto</th><th>Precio</th></tr>";
                 while($row = $result->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row["Nombre"] . "</td>";
                     echo "<td>$" . number_format($row["Precio"], 2) . "</td>";
-                    echo "<td>";
-                    echo "<form method='POST'>";
-                    echo "<input type='hidden' name='id' value='" . $row["ProductoID"] . "'>";
-                    echo "<button type='submit' name='eliminar'>Eliminar</button>";
-                    echo "</form>";
-                    echo "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
             } else {
-                echo "<p>El carrito está vacío.</p>";
+                echo "<p>No has seleccionado ningún producto.</p>";
             }
 
+            // Cerrar conexión
+            $stmt->close();
             $conn->close();
-            ?> 
+            ?>
         </div>
     </section>
     <footer>

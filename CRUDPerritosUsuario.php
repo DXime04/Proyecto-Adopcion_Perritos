@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-eventos.css">
     <link rel="stylesheet" href="css/Perritos.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -59,15 +60,16 @@
                     echo "<p>Tamaño: " . $row["Tamaño"] . "</p>";
                     echo "<p>Raza: " . $row["Raza"] . "</p>";
                     echo "<p>Género: " . $row["Genero"] . "</p>";
-                    echo "<a href='editar_perrito.php?id=" . $row["ID"] . "'>Editar</a> ";
-                    echo "<a href='eliminar_perrito.php?id=" . $row["ID"] . "' class='eliminar'>Eliminar</a>";
+                    echo "<form action='solicitud_adoptar.php' method='GET'>";
+                    echo "<button type='submit'>Adoptar</button>";
+                    echo "</form>";
                     echo "</div>";
                 }
             } else {
                 echo "<p>No hay perritos disponibles para adopción.</p>";
             }
 
-            
+
             $conn->close();
             ?>
         </div>

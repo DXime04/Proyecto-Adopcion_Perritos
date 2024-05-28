@@ -1,32 +1,9 @@
-<?php
-// Datos de conexión a la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "adopcion_perritos";
-
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
-
-// Consulta SQL para obtener todos los registros de donaciones con información de usuario y producto
-$sql = "SELECT Donaciones.ID, Donaciones.UsuarioID, Usuario.Username AS Usuario, Donaciones.ProductoID, Producto.Nombre AS Producto, Producto.Precio AS Costo, Donaciones.FechaDonacion 
-        FROM Donaciones 
-        INNER JOIN Usuario ON Donaciones.UsuarioID = Usuario.ID 
-        INNER JOIN Producto ON Donaciones.ProductoID = Producto.ID";
-$result = $conn->query($sql);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donaciones</title>
+    <title>Adopciones</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-donar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -69,7 +46,7 @@ $result = $conn->query($sql);
         }
     </style>
 </head>
-<body id="RepDonar">
+<body id="RepAdopciones">
     <header>
         <div class="nav">
             <ul class="nav navbar-nav collapse navbar-right">
@@ -80,35 +57,57 @@ $result = $conn->query($sql);
                 <li><a href="RepVoluntarios.php">Voluntariado</a></li>
                 <li><a href="CRUDProductos.php">Productos</a></li>
                 <li><a href="razas.php">Detalles</a></li>
-                <li><a href="RepDonar.php" class="active">Donaciones</a></li>
+                <li><a href="RepDonar.php">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
-                <li><a href="RepAdopciones.php">Adopciones</a></li>
+                <li><a href="RepAdopciones.php" class="active">Adopciones</a></li>
             </ul>
         </div>
     </header>
     <section id="InfoUsuarios" class="seccion5">
         <div class="Texto1">
-        <h2><span>Reporte de Donaciones</span></h2>
+        <h2><span>Reporte de Adopciones</span></h2>
             <?php
+            // Datos de conexión a la base de datos
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "adopcion_perritos";
+    
+            // Crear conexión
+            $conn = new mysqli($servername, $username, $password, $database);
+    
+            // Verificar la conexión
+            if ($conn->connect_error) {
+                die("Error de conexión: " . $conn->connect_error);
+            }
+    
+            // Consulta SQL para obtener todos los registros de adopciones con información de usuario y perrito
+            $sql = "SELECT Adopciones.UsuarioID, Usuario.Username AS Usuario, Adopciones.PerritoID, Perritos.Nombre AS Perrito, Adopciones.FechaAdopcion 
+                    FROM Adopciones 
+                    INNER JOIN Usuario ON Adopciones.UsuarioID = Usuario.ID 
+                    INNER JOIN Perritos ON Adopciones.PerritoID = Perritos.ID";
+            $result = $conn->query($sql);
+    
             if ($result->num_rows > 0) {
                 // Imprimir los datos en una tabla
                 echo "<table border='1'>";
-                echo "<tr><th>ID Donación</th><th>ID Usuario</th><th>Usuario</th><th>ID del Producto</th><th>Producto</th><th>Costo del Producto</th><th>Fecha de Donación</th></tr>";
+                echo "<tr><th>ID Usuario</th><th>Usuario</th><th>ID Perrito</th><th>Nombre del Perrito</th><th>Fecha de Adopción</th></tr>";
                 while($row = $result->fetch_assoc()) {
                     echo "<tr>";
-                    echo "<td>" . $row["ID"] . "</td>";
                     echo "<td>" . $row["UsuarioID"] . "</td>";
                     echo "<td>" . $row["Usuario"] . "</td>";
-                    echo "<td>" . $row["ProductoID"] . "</td>";
-                    echo "<td>" . $row["Producto"] . "</td>";
-                    echo "<td>" . $row["Costo"] . "</td>";
-                    echo "<td>" . $row["FechaDonacion"] . "</td>";
+                    echo "<td>" . $row["PerritoID"] . "</td>";
+                    echo "<td>" . $row["Perrito"] . "</td>";
+                    echo "<td>" . $row["FechaAdopcion"] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
             } else {
                 echo "0 resultados";
             }
+    
+            // Cerrar conexión
+            $conn->close();
             ?>
         </div>
     </section>
@@ -125,8 +124,3 @@ $result = $conn->query($sql);
     <script src="/JS/script-nav.js"></script>
 </body>
 </html>
-
-<?php
-// Cerrar conexión
-$conn->close();
-?>

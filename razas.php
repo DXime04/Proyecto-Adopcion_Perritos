@@ -53,7 +53,7 @@ $conn->close();
                 <li><a href="razas.php" class="active">Detalles</a></li>
                 <li><a href="RepDonar.php">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
-                <li><a href="RepAdopciones.html">Adopciones</a></li>
+                <li><a href="RepAdopciones.php">Adopciones</a></li>
             </ul>
         </div>
     </header>

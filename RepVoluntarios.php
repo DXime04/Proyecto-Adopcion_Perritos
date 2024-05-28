@@ -23,14 +23,14 @@
                 <li><a href="razas.php">Detalles</a></li>
                 <li><a href="RepDonar.php">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
-                <li><a href="RepAdopciones.html">Adopciones</a></li>
+                <li><a href="RepAdopciones.php">Adopciones</a></li>
             </ul>
         </div>
     </header>
     <section id="InfoUsuarios" class="seccion5">
         <div class="Texto1">
         <h2><span>Eventos</span></h2>
-            <br><br><br><br><br>
+
                 <?php
                 // Datos de conexión a la base de datos
                 $servername = "localhost";

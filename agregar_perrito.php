@@ -27,27 +27,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($check !== false) {
         $uploadOk = 1;
     } else {
-        echo "<script>alert('El archivo no es una imagen.'); window.location.href = 'CRUDPerritos.php';</script>";
+        echo "<script>alert('El archivo no es una imagen.'); window.location.href = 'CRUDEPerritos.php';</script>";
         $uploadOk = 0;
     }
 
     if (file_exists($target_file)) {
-        echo "<script>alert('Lo siento, el archivo ya existe.'); window.location.href = 'CRUDPerritos.php';</script>";
+        echo "<script>alert('Lo siento, el archivo ya existe.'); window.location.href = 'CRUDEPerritos.php';</script>";
         $uploadOk = 0;
     }
 
     if ($foto["size"] > 500000) {
-        echo "<script>alert('Lo siento, tu archivo es demasiado grande.'); window.location.href = 'CRUDPerritos.php';</script>";
+        echo "<script>alert('Lo siento, tu archivo es demasiado grande.'); window.location.href = 'CRUDEPerritos.php';</script>";
         $uploadOk = 0;
     }
 
     if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-        echo "<script>alert('Lo siento, solo se permiten archivos JPG, JPEG, PNG y GIF.'); window.location.href = 'CRUDPerritos.php';</script>";
+        echo "<script>alert('Lo siento, solo se permiten archivos JPG, JPEG, PNG y GIF.'); window.location.href = 'CRUDEPerritos.php';</script>";
         $uploadOk = 0;
     }
 
     if ($uploadOk == 0) {
-        echo "<script>alert('Lo siento, tu archivo no fue subido.'); window.location.href = 'CRUDPerritos.php';</script>";
+        echo "<script>alert('Lo siento, tu archivo no fue subido.'); window.location.href = 'CRUDEPerritos.php';</script>";
    
     } else {
         if (move_uploaded_file($foto["tmp_name"], $target_file)) {
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     VALUES ('$nombre', '$edad', '$tamañoID', '$razaID', '$generoID', '$target_file')";
 
             if ($conn->query($sql) === TRUE) {
-                echo "<script>alert('Perrito agregado exitosamente.'); window.location.href = 'CRUDPerritos.php';</script>";
+                echo "<script>alert('Perrito agregado exitosamente.'); window.location.href = 'CRUDEPerritos.php';</script>";
             } else {
                 echo "<script>alert('Error al agregar perrito: " . $conn->error . "'); window.location.href = 'CRUDEPerritos.php';</script>";
             }

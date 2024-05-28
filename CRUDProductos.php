@@ -6,8 +6,17 @@
     <title>Productos</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style-eventos.css">
+    <link rel="stylesheet" href="css/Donaciones.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .seccion5 {
+            display: grid;
+            gap: 20px; 
+            padding: 40px 100px ; 
+            height: auto;
+        }
+    </style>
 </head>
 <body id="Inicio">
     <header>
@@ -22,16 +31,15 @@
                 <li><a href="razas.php">Detalles</a></li>
                 <li><a href="RepDonar.php">Donaciones</a></li>
                 <li><a href="CRUDEPerritos.php">Cachorros</a></li>
-                <li><a href="RepAdopciones.html">Adopciones</a></li>
+                <li><a href="RepAdopciones.php">Adopciones</a></li>
             </ul>
         </div>
     </header>
     <section id="InfoProductos" class="seccion5">
         <div class="Texto1">
             <h2><span>Productos</span></h2>
-        </div><br>
+        </div>
         <div class="contenido">
-            <br><br><br><br><br>
             <?php
             $servername = "localhost";
             $username = "root";
